@@ -64,7 +64,8 @@ h4 {
   text-transform: uppercase; }
 
 #main-header {
-  background: #034a73; }
+  background: #034a73;
+  position: relative; }
   #main-header #main-nav {
     display: flex;
     justify-content: space-between;
@@ -90,6 +91,31 @@ h4 {
           font-size: 1.2rem; }
           #main-header #main-nav ul li a:hover {
             background: #045584; }
+  #main-header .search {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 78px;
+    top: 0;
+    right: 0; }
+    #main-header .search div {
+      background: #034a73;
+      z-index: 1; }
+      #main-header .search div i {
+        display: inline-block;
+        font-size: 2rem;
+        padding: .5rem; }
+        #main-header .search div i:hover {
+          transition: 0.2s;
+          cursor: pointer;
+          color: #034a73;
+          background: #fff; }
+    #main-header .search .search-field {
+      padding: 0.5rem;
+      position: relative;
+      right: -300px; }
 
 #main-section .content {
   column-count: 2;
