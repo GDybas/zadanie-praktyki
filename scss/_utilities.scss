@@ -20,6 +20,10 @@
 .hr {
   &-dotted {
     border-bottom: 2px dotted $primary-color;
+
+    &-short {
+      width: 65%;
+    }
   }
 }
 
