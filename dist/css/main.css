@@ -91,7 +91,7 @@ h4 {
           font-size: 1.2rem; }
           #main-header #main-nav ul li a:hover {
             background: #045584; }
-  #main-header .search {
+  #main-header .search-wrap {
     color: #fff;
     display: flex;
     justify-content: center;
@@ -99,23 +99,37 @@ h4 {
     position: absolute;
     height: 78px;
     top: 0;
-    right: 0; }
-    #main-header .search div {
+    right: 0;
+    overflow: hidden; }
+    #main-header .search-wrap div {
       background: #034a73;
       z-index: 1; }
-      #main-header .search div i {
+      #main-header .search-wrap div .search-icon {
         display: inline-block;
         font-size: 2rem;
         padding: .5rem; }
-        #main-header .search div i:hover {
-          transition: 0.2s;
-          cursor: pointer;
-          color: #034a73;
-          background: #fff; }
-    #main-header .search .search-field {
-      padding: 0.5rem;
+    #main-header .search-wrap form {
+      transition: 0.5s;
       position: relative;
-      right: -300px; }
+      right: -200px; }
+      #main-header .search-wrap form .search-field {
+        padding: 0.5rem;
+        opacity: 0.8;
+        outline: none; }
+        #main-header .search-wrap form .search-field:focus {
+          opacity: 0.9; }
+    #main-header .search-wrap .toggler {
+      position: absolute;
+      top: 15px;
+      right: 0;
+      z-index: 2;
+      height: 50px;
+      width: 50px;
+      cursor: pointer;
+      opacity: 0; }
+      #main-header .search-wrap .toggler:checked + form {
+        transition: 0.8s;
+        right: 0; }
 
 #main-section .content {
   column-count: 2;
