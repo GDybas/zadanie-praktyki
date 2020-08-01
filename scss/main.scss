@@ -7,9 +7,15 @@
   box-sizing: border-box;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   background: #fff;
   font-family: $font-family;
+  overflow-x: hidden;
+  height: 100%;
 }
 
 a {
@@ -34,6 +40,7 @@ h4 {
 #main-header {
   background: $primary-color;
   position: relative;
+  z-index: 1;
 
   #main-nav {
     display: flex;
@@ -65,7 +72,7 @@ h4 {
           font-size: 1.2rem;
 
           &:hover {
-            background: $menu-hover-color;
+            background: $links-hover-color;
           }
         }
       }
@@ -81,7 +88,7 @@ h4 {
     height: 78px;
     top: 0;
     right: 0;
-    overflow: hidden;
+    // overflow: hidden;
 
     div {
       background: $primary-color;
@@ -111,7 +118,7 @@ h4 {
       }
     }
 
-    .toggler {
+    .search-wrap-toggler {
       position: absolute;
       top: 15px;
       right: 0;
@@ -128,22 +135,62 @@ h4 {
         }
       }
     }
-
-
   }
 }
 
+//Side Menu
+.side-menu {
+  background: yellow;
+  max-width: 220px;
+  min-height: 100%;
+  padding: 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // z-index: -1;
+  box-shadow: 5px 5px 8px -2px rgba(0, 0, 0, 0.41);
 
+  a {
+    color: $primary-color;
+    font-weight: 550;
+    line-height: 2rem;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: $links-hover-color;
+    }
+  }
+
+  &-toggler {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60px;
+  }
+
+  &-container {
+    margin: 6rem 0;
+  }
+
+  &-bar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    background: blue;
+  }
+}
 
 //About section
 #main-section {
+
   .content {
     column-count: 2;
     column-gap: 2rem;
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-
-    &-container {}
 
     p {
       text-align: justify;
@@ -159,6 +206,7 @@ h4 {
 
 //footer
 #main-footer {
+  position: relative;
   background: $primary-color;
   height: 50px;
   margin-top: 6rem;
