@@ -16,28 +16,46 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="header">
       <div class="container">
-        <nav class="main-nav">
-          <div class="logo-container">
-            <img src="./img/logo-simple.png" alt="Logo" />
+        <nav class="header__nav">
+          <div class="header__logo-container">
+            <a class="header__logo-link" href="#"
+              ><img class="header__logo" src="./img/logo-simple.png" alt="Logo"
+            /></a>
           </div>
-          <ul>
-            <li><a href="#">Aktualności</a></li>
-            <li><a href="#">Branże</a></li>
-            <li><a href="#">Produkty</a></li>
-            <li><a href="#">Usługi</a></li>
-            <li><a href="#">Referencje</a></li>
-            <li><a href="#">Kontakt</a></li>
+          <ul class="header__menu-list">
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Aktualności</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Branże</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Produkty</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Usługi</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Referencje</a>
+            </li>
+            <li class="header__menu-item">
+              <a class="header__menu-link" href="#">Kontakt</a>
+            </li>
           </ul>
         </nav>
-        <div class="search-wrap">
-          <input type="checkbox" class="search-wrap-toggler" />
-          <form>
-            <input type="text" class="search-field" placeholder="Wyszukaj..." />
+        <div class="header__search-wrap">
+          <input type="checkbox" class="header__search-toggler" />
+          <form class="header__search-form">
+            <input
+              type="text"
+              class="header__search-field"
+              placeholder="Wyszukaj..."
+            />
           </form>
-          <div>
-            <i class="im im-magnifier search-icon"></i>
+          <div class="header__search-icon-container">
+            <i class="im im-magnifier header__search-icon"></i>
           </div>
         </div>
       </div>
@@ -45,54 +63,84 @@
 
     <!-- Side Menu -->
     <aside class="side-menu">
-      <input type="checkbox" class="side-menu-toggler" />
-      <div class="side-menu-container">
+      <input type="checkbox" class="side-menu__toggler" />
+      <div class="side-menu__container">
         <ul>
-          <li><a href="#">Menu</a></li>
-          <div class="hr-dotted hr-dotted-short my-1"></div>
-          <li><a href="#">Aktualności</a></li>
-          <li><a href="#">Branże</a></li>
-          <li><a href="#">Produkty</a></li>
-          <div class="hr-dotted hr-dotted-short my-1"></div>
-          <li><a href="#">Usługi</a></li>
-          <li><a href="#">Referencje</a></li>
-          <li><a href="#">Kontakt</a></li>
-          <div class="hr-dotted hr-dotted-short my-1"></div>
-          <li><a href="#">O firmie</a></li>
-          <li><a href="#">Nagrody</a></li>
-          <li><a href="#">Relacje inwestorskie</a></li>
-          <li><a href="#">Partnerzy</a></li>
-          <li><a href="#">Kariera</a></li>
-          <div class="hr-dotted hr-dotted-short my-1"></div>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Menu</a>
+          </li>
+          <div class="hr hr--dotted hr--short hr--thin my-1"></div>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Aktualności</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Branże</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Produkty</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Usługi</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Referencje</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Kontakt</a>
+          </li>
+          <div class="hr hr--dotted hr--short hr--thin my-1"></div>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">O firmie</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Nagrody</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Relacje inwestorskie</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Partnerzy</a>
+          </li>
+          <li class="side-menu__item">
+            <a class="side-menu__link" href="#">Kariera</a>
+          </li>
+          <div class="hr hr--dotted hr--short hr--thin my-1"></div>
         </ul>
         <a href="https://www.facebook.com/"
-          ><i class="fab fa-facebook-f fa-2x my-1"></i
+          ><i class="fab fa-facebook-f my-1 side-menu__social-icon"></i
         ></a>
         <a href="https://www.linkedin.com"
-          ><i class="fab fa-linkedin-in fa-2x"></i
+          ><i class="fab fa-linkedin-in side-menu__social-icon"></i
         ></a>
       </div>
-
-      <div class="side-menu-bar">
-        <i class="fas fa-caret-right"></i>
-        <p>menu</p>
+      <div class="side-menu__right-bar">
+        <i class="fas fa-caret-right side-menu__tri-icon"></i>
+        <p class="side-menu__tri-icon-text">menu</p>
       </div>
     </aside>
 
     <!-- Main Section -->
     <main class="main-section">
       <div class="container">
-        <div class="section-title">
-          <i class="im im-home"></i>
+        <div class="main-section__title">
+          <i class="im im-home main-section__icon"></i>
           <h2>O Firmie</h2>
         </div>
-        <div class="hr-dotted my-3"></div>
-        <p class="my-2">SIMPLE - z nami biznes jest prostszy</p>
-        <div class="content">
-          <img src="./img/stock-photo.png" alt="" />
+        <div class="hr my-3"></div>
+        <p class="main-section__first-header my-2">
+          SIMPLE - z nami biznes jest prostszy
+        </p>
+        <div class="main-section__content">
+          <img
+            class="main-header__stock-photo"
+            src="./img/stock-photo.png"
+            alt=""
+          />
 
-          <p class="my-1">
-            <span>Ponad 24 lata doświadczenia</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Ponad 24 lata doświadczenia</span
+            >
             SIMPLE S.A. jest wiodącym w kraju producentem rozwiązań
             informatycznych do wspomagania zarządzania przedsiębiorstwami. Będąc
             producentem oprogramowania, dajemy pełną gwarancję dotyczącą jego
@@ -101,8 +149,10 @@
             się potrzeby klientów.
           </p>
 
-          <p class="my-1">
-            <span>Ponad 3 500 klientów</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Ponad 3 500 klientów</span
+            >
             Działamy na polskim rynku producentów rozwiązań klasy ERP już od
             ponad 24 lat! Dostarczamy rozwiązania, które sprawdziły się w wielu
             zróżnicowanych branżach i doskonale znamy biznes naszych klientów.
@@ -110,23 +160,27 @@
             rynku. Ze współpracy z nami skorzystało już blisko ponad 3,5 tysiąca
             firm.
           </p>
-          <p class="my-1">
-            <span>Ponad 23 000 użytkowników</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Ponad 23 000 użytkowników</span
+            >
             Nasze produkty zawsze charakteryzowały się udanym połączeniem:
             innowacyjności, szerokiej funkcjonalności, adaptowalności i
             skalowalności jak również dbałości o rozsądny budżet, dostosowany do
             możliwości naszych Klientów. Dlatego w 2010 roku liczba naszych
             użytkowników przekroczyła 25 tysiące
           </p>
-          <p class="my-1">
-            <span>Nasi odbiorcy</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title">Nasi odbiorcy</span>
             Odbiorcami naszych rozwiązań są głównie firmy budowlane,
             przedsiębiorstwa produkcyjne, uczelnie wyższe, jednostki medyczne
             oraz firmy usługowe i handlowe. Widzimy i wspólnie wykorzystujemy
             możliwości jakie daje proces integracji Polski z Unią Europejską.
           </p>
-          <p class="my-1">
-            <span>Zintegrowane rozwiązania dla każdej firmy</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Zintegrowane rozwiązania dla każdej firmy</span
+            >
             SIMPLE posiada kompleksowe rozwiązania, dedykowane największym
             sektorom naszej gospodarki. W naszej ofercie znajdą Państwo
             rozwiązania dla firm o różnych profilach działalności (produkcyjnym,
@@ -136,8 +190,10 @@
             indywidualne potrzeby klientów oraz integrację wszelkich rozwiązań
             wspomagających zarządzanie.
           </p>
-          <p class="my-1">
-            <span>Certyfikaty i rekomendacje</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Certyfikaty i rekomendacje</span
+            >
             SIMPLE S.A. posiada istotne na polskim rynku rekomendacje od
             Polskiego Towarzystwa Ekonomicznego oraz Stowarzyszenia Księgowych w
             Polsce, które potwierdzają, że oprogramowanie SIMPLE jest
@@ -155,8 +211,10 @@
             otrzymała również tytuł "Najlepszy dostawca IT dla przemysłu 2010 w
             kategorii ERP/MRP II (system polski)- producent".
           </p>
-          <p class="my-1">
-            <span>Zawsze blisko ciebie</span>
+          <p class="main-section__paragraph my-1">
+            <span class="main-section__paragraph-title"
+              >Zawsze blisko ciebie</span
+            >
             SIMPLE S.A. wraz z Partnerami prowadzi szeroko zakrojoną sprzedaż do
             Klientów na terenie całego kraju. Chcemy być jak najbliżej naszych
             klientów, dlatego wciąż dążymy do poszerzania sieci naszej

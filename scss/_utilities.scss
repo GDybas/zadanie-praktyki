@@ -4,28 +4,19 @@
   margin: auto;
 }
 
-.section-title {
-  display: flex;
-  color: $primary-color;
-  justify-content: center;
-  align-items: center;
-  padding-top: 6.5rem;
-
-  i {
-    margin: 0 1rem;
-    font-size: 4rem;
-  }
-}
 
 .hr {
-  &-dotted {
-    border-bottom: 2px dotted $primary-color;
+  border-bottom: 2px dotted $primary-color;
 
-    &-short {
-      width: 65%;
-    }
+  &--short {
+    width: 65%;
+  }
+
+  &--thin {
+    border-width: thin;
   }
 }
+
 
 //paddings
 .py {
