@@ -7,9 +7,10 @@
 
 .hr {
   border-bottom: 2px dotted $primary-color;
+  margin: 0.5rem 0;
 
   &--short {
-    width: 65%;
+    width: 85%;
   }
 
   &--thin {

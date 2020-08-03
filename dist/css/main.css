@@ -4,9 +4,10 @@
   margin: auto; }
 
 .hr {
-  border-bottom: 2px dotted #034a73; }
+  border-bottom: 2px dotted #034a73;
+  margin: 0.5rem 0; }
   .hr--short {
-    width: 65%; }
+    width: 85%; }
   .hr--thin {
     border-width: thin; }
 
